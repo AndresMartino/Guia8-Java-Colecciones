@@ -51,7 +51,7 @@ public class Main {
                     while (iterator.hasNext()) {
                         Alumno alumno1=iterator.next();
                         if (alumno1.getNombre().equals(nombreBuscar)) {
-                            System.out.println("El promedio es "+alumno.notaFinal(alumno.getNotas()));
+                            System.out.println("El promedio es "+alumno1.notaFinal());
                             band=true;
                         }
                         

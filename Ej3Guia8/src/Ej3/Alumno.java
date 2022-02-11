@@ -33,10 +33,12 @@ public class Alumno {
     public void setNotas(ArrayList<Integer> notas) {
         this.notas = notas;
     }
-    public int notaFinal(ArrayList<Integer> notas1){
+    
+    
+    public double notaFinal(){
         
         int acu=0;
-        Iterator<Integer> iterator=notas1.iterator();
+        Iterator<Integer> iterator=this.notas.iterator();
         while (iterator.hasNext()) {
             Integer nota2=iterator.next();
             acu+=nota2;
