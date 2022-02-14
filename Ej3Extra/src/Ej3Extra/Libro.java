@@ -1,5 +1,7 @@
 package Ej3Extra;
 
+import java.util.Objects;
+
 public class Libro {
     private String titulo;
     private String autor;
@@ -46,6 +48,31 @@ public class Libro {
 
     public void setnEjemplaresPrestado(Integer nEjemplaresPrestado) {
         this.nEjemplaresPrestado = nEjemplaresPrestado;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 83 * hash + Objects.hashCode(this.titulo);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Libro other = (Libro) obj;
+        if (!Objects.equals(this.titulo, other.titulo)) {
+            return false;
+        }
+        return true;
     }
     
     public boolean prestamo(){
