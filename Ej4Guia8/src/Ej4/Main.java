@@ -52,14 +52,14 @@ public class Main {
             System.out.println(pelicula);
         }
         System.out.printf("\n\n");
-        System.out.println("-----peliculaes con duracion menor a una hora----");
+        System.out.println("-----peliculas con duracion menor a una hora----");
         for (Pelicula pelicula : peliculas) {
             if (pelicula.getDuracion().isBefore(d)) {
                 System.out.println(pelicula);
             }
         }
-         System.out.printf("\n\n");
-        System.out.println("-----peliculas ordenadas por duracion de manera descendente-----");
+         //System.out.printf("\n\n");
+        System.out.println("\n\n-----peliculas ordenadas por duracion de manera descendente-----");
         Collections.sort(peliculas, Comparadores.ordenarPorDuracionDesc);
         for (Pelicula pelicula : peliculas) {
             System.out.println(pelicula);

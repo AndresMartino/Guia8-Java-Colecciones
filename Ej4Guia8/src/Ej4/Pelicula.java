@@ -44,6 +44,8 @@ public class Pelicula {
     public String toString() {
         return  "titulo=" + titulo + ", director=" + director + ", duracion=" + duracion ;
     }
+
+  
     
     
 }
