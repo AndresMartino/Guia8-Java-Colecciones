@@ -77,6 +77,15 @@ public class PeliculaService {
         }
     }
 
+    public void ordenamiento() {
+
+        ordenarDuracionDescendente();
+        ordenarDuracionAscendente();
+        ordenarTituloAscendente();
+        ordenarDirectorAscendente();
+        
+    }
+
     public void ordenarDuracionAscendente() {
         System.out.println("Peliculas ordenadas por duracion de manera ascendente");
         Collections.sort(listaPeliculas, new ComparadorDuracionAscen());

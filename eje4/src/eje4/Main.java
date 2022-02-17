@@ -7,10 +7,7 @@ public class Main {
         peliculaService.Principal();
         peliculaService.mostrarPeliculas();
         peliculaService.pelisMayoresDeUnaHora();
-        peliculaService.ordenarDuracionDescendente();
-        peliculaService.ordenarDuracionAscendente();
-        peliculaService.ordenarTituloAscendente();
-        peliculaService.ordenarDirectorAscendente();
+        peliculaService.ordenamiento();
 
     }
 
