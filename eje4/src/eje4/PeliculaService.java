@@ -83,7 +83,7 @@ public class PeliculaService {
         ordenarDuracionAscendente();
         ordenarTituloAscendente();
         ordenarDirectorAscendente();
-        
+
     }
 
     public void ordenarDuracionAscendente() {
